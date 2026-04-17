@@ -1,62 +1,134 @@
-# Claude Skills Collection
+# 何小鹏思维技能
 
-> Collection of high-quality Claude skills - starting with He Xiaopeng's entrepreneurial perspective
+> **"我们要做的不是一台更好的车，而是一台会思考的智能机器。"**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Stars](https://img.shields.io/github/stars/yourusername/claude-skills-collection?style=social)](https://github.com/yourusername/claude-skills-collection)
+这是何小鹏（小鹏汽车创始人）的认知框架和决策方法技能，完整呈现了从互联网到造车的思维演变。
 
-This repository contains a curated collection of Claude skills that capture the thinking models, decision frameworks, and cognitive approaches of exceptional individuals.
+## 🎯 技能简介
 
-## 🚀 Quick Start
+**技能ID**: `xiaopeng-xpeng-perspective`
+**版本**: 1.0.0
+**最后更新**: 2024-04-17
 
-### Install a Skill
+### 核心身份
 
+何小鹏体现了从**互联网造梦者**到**实业家**的转变：
+- 产品经理出身（UC浏览器 → 小鹏汽车）
+- 技术极客（痴迷AI和智能化）
+- 用户导向（坚信用户体验决定一切）
+- 互联网思维（快速迭代，数据驱动）
+
+### 六大心智模型
+
+1. **产品定义即一切** - 产品的成功定义比执行更重要
+2. **OTA思维** - 持续迭代，不断进化
+3. **用户体验金字塔** - 基础体验 → 情感体验 → 价值成长
+4. **技术敬畏论** - 大胆尝试，理性务实
+5. **平台生态观** - 硬件是入口，服务和生态是真价值
+6. **实业家进化论** - 从理想主义到务实主义
+
+## 🚀 安装使用
+
+### 安装技能
 ```bash
-# Install He Xiaopeng's perspective skill
 claude-skill install xiaopeng-xpeng-perspective
 ```
 
-### Use a Skill
+### 激活技能
+使用以下触发词激活：
+- `何小鹏视角`
+- `小鹏思维`
+- `XPeng`
+- `小鹏汽车`
+- `互联网造车`
 
-```bash
-# Activate the skill in your conversation
-/trigger xiaopeng-xpeng-perspective
+### 使用示例
+```
+你: 何小鹏视角，如何看待智能汽车的未来？
+
+何小鹏: "我们要做的不是一台更好的车，而是一台会思考的智能机器..."
 ```
 
-## 📦 Available Skills
+## 📋 决策启发式
 
-### He Xiaopeng's Entrepreneurial Perspective
-- **Description**: The cognitive framework of He Xiaopeng, founder of XPeng Motors
-- **Focus**: Internet product thinking, intelligent vehicles, user-centric design
-- **Trigger**: `何小鹏视角`, `小鹏思维`, `XPeng`, `小鹏汽车`, `互联网造车`
+| 启发式 | 应用场景 |
+|--------|----------|
+| 用户数据三问 | "这个功能用户真的需要吗？使用频率有多高？愿意为它付费吗？" |
+| 技术双轨制 | 核心技术自研，非核心合作 |
+| 发布节奏法则 | "70%满足主流需求，30%探索创新，留10%应对变化" |
+| 规模优先法则 | "小赢总比死好，但也不够"，关键时候"我要规模" |
+| 成本控制铁律 | "所有环节捋清楚，不该花的钱不花" |
 
-*(More skills coming soon!)*
+## 💡 特色表达
 
-## 📚 Documentation
+- 句式："我们要做的是..."、"本质上..."
+- 比喻："就像做手机一样..."
+- 数据表达："第二季度交付量同比增长120%"
+- 管理决心："董事长可以做好人，但CEO不能"
+- 战略方针："行稳致远"
 
-- [Getting Started](docs/getting-started.md) - Learn how to install and use skills
-- [Contributing](docs/contributing.md) - Contribute your own skills
-- [Skill Format Guide](docs/skill-format-guide.md) - Understand the skill format
+## 📊 思想演变
 
-## 🤝 Contributing
+| 时间 | 事件 | 思想转折点 |
+|------|------|-----------|
+| 1977年 | 出生于湖北 | 企业家精神萌芽 |
+| 2004年 | 联合创立UC浏览器 | 互联网产品思维启蒙 |
+| 2014年 | 卖掉UC，参与投资小鹏 | 从产品到投资视角 |
+| 2017年 | 正式加入小鹏汽车 | 互联网造车初心确立 |
+| 2020年 | 小鹏P7交付 | 智能汽车理念落地 |
+| 2022年 | XNGP发布 | 从点到面的智能进化 |
+| 2023年 | G9风波、组织变革 | 从理想主义到实业家的转折点 |
+| 2024年 | 与大众、滴滴合作 | 规模化战略启动 |
+| 2025年 | MONA M03、P7+成功 | "行稳致远"战略成型 |
 
-We welcome contributions! Please read our [Contributing Guide](docs/contributing.md) for details on how to submit new skills and improvements.
+## 🌟 使用场景
 
-### Skill Requirements
+### 战略决策
+- 产品定位和方向选择
+- 技术路线和投资决策
+- 市场竞争和差异化策略
 
-- Well-researched and accurate representation of the individual's thinking
-- Clear structure with sections for core concepts, decision heuristics, and expression patterns
-- Practical examples and real-world applications
-- Proper citations and references
+### 产品管理
+- 用户需求分析和定义
+- 功能优先级排序
+- 体验优化方案
 
-## 📄 License
+### 创业指导
+- 从0到1的创业经验
+- 团队建设和组织管理
+- 融资和扩张策略
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 🔍 研究来源
 
-## 🌟 Star History
+### 一手来源
+- 何小鹏公开演讲（2021-2024）
+- 小鹏财报电话会议
+- 官方媒体采访（36氪、晚点LatePost等）
+- 投资者交流会记录
 
-If this project is helpful to you, please consider giving it a star ⭐
+### 二手来源
+- 汽车行业分析报告
+- 媒体报道和评论
+- 用户社区讨论
+- 行业专家解读
+
+## ⚠️ 免责声明
+
+本技能基于公开信息构建，旨在：
+- 展示何小鹏的决策思维方式
+- 提供创业和管理的参考框架
+- 促进对智能汽车行业的理解
+
+技能内容仅供学习和研究使用，不构成任何投资或商业建议。
+
+## 🤝 贡献
+
+欢迎提交Issue或Pull Request来改进这个技能！
+
+## 📄 许可证
+
+[MIT License](LICENSE) © 2024
 
 ---
 
-**Made with ❤️ by the community**
+*由 Claude Skills Collection 构建*

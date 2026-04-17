@@ -1,42 +1,38 @@
-# Contributing to Claude Skills Collection
+# 贡献指南
 
-We welcome contributions! This guide will help you add new skills and improve existing ones.
+感谢您对何小鹏思维技能的贡献！本指南将帮助您添加新技能和改进现有技能。
 
-## 🤝 Contribution Guidelines
+## 🤝 贡献准则
 
-### Types of Contributions
+### 贡献类型
+1. **新技能**: 添加代表杰出人物的技能
+2. **改进**: 增强现有技能
+3. **文档**: 修复或改进文档
+4. **Bug修复**: 修正技能文件中的错误
 
-1. **New Skills**: Add skills representing notable individuals
-2. **Improvements**: Enhance existing skills
-3. **Documentation**: Fix or improve documentation
-4. **Bug Fixes**: Correct errors in skill files
+### 技能质量标准
+#### 研究质量
+- 基于公开可得的信息
+- 多个来源验证
+- 无推测或个人观点
+- 正确引用和参考
 
-### Skill Quality Standards
+#### 结构
+- 遵循标准技能格式
+- 清晰的章节和组织
+- 包含实际示例
+- 决策启发式（如适用）
 
-#### Research Quality
-- Based on publicly available information
-- Multiple sources verified
-- No speculation or personal opinions
-- Properly cited and referenced
+#### 真实性
+- 捕捉个人的声音和风格
+- 准确代表其思维方式
+- 语境适当的回答
+- 避免刻板印象或过度简化
 
-#### Structure
-- Follows the standard skill format
-- Clear sections and organization
-- Practical examples included
-- Decision heuristics where applicable
+## 📝 添加新技能
 
-#### Authenticity
-- Captures the individual's voice and style
-- Accurate representation of their thinking
-- Context-appropriate responses
-- No stereotyping or oversimplification
-
-## 📝 Adding a New Skill
-
-### 1. Skill Structure
-
-Create a new skill in `skills/[skill-name]/`:
-
+### 1. 技能结构
+在 `skills/` 目录创建新技能：
 ```
 skills/new-skill/
 ├── SKILL.md
@@ -45,177 +41,168 @@ skills/new-skill/
     └── sample-conversation.md
 ```
 
-### 2. SKILL.md Format
-
+### 2. SKILL.md 格式
 ```yaml
 ---
 name: skill-name
 description: |
-  Brief description of the skill
+  技能简短描述
 trigger_words: |
-  Word1, Word2, Word3
+  触发词1, 触发词2, 触发词3
 version: 1.0.0
-author: Your Name
+author: 你的名字
 last_updated: YYYY-MM-DD
 ---
 
-# Skill Name
+# 技能名称
 
-> "Famous quote"
+> "名言警句"
 
-## Core Identity
+## 核心身份
 ...
 
-## Mental Models
+## 心智模型
 ...
 
-## Decision Heuristics
+## 决策启发式
 ...
 ```
 
-### 3. README.md Template
-
+### 3. README.md 模板
 ```markdown
-# Skill Name
+# 技能名称
 
-> Brief description
+> 简短描述
 
-## Overview
-- **Skill ID**: `skill-name`
-- **Version**: 1.0.0
-- **Last Updated**: YYYY-MM-DD
+## 概览
+- **技能ID**: `skill-name`
+- **版本**: 1.0.0
+- **最后更新**: YYYY-MM-DD
 
-## Installation
+## 安装
 ```bash
 claude-skill install skill-name
 ```
 
-## Usage
-### Triggers
-- Trigger1
-- Trigger2
+## 使用方法
+### 触发词
+- 触发词1
+- 触发词2
 
-### Example
+### 示例
 ```
-User: Question
-Skill: Response
-```
-
-## Research Sources
-- Source 1
-- Source 2
+用户: 问题
+技能: 回答
 ```
 
-### 4. Example Conversation
+## 研究来源
+- 来源1
+- 来源2
+```
 
-Show real-world applications of the skill.
+### 4. 示例对话
+展示技能的实际应用。
 
-## 🔄 Contribution Workflow
+## 🔄 贡献工作流
 
-### 1. Fork the Repository
-
+### 1. Fork 仓库
 ```bash
-# Fork the repo on GitHub
-git clone https://github.com/YOUR_USERNAME/claude-skills-collection.git
-cd claude-skills-collection
+# 在GitHub上fork仓库
+git clone https://github.com/YOUR_USERNAME/he-xiaopeng.skill.git
+cd he-xiaopeng.skill
 ```
 
-### 2. Create a Branch
-
+### 2. 创建分支
 ```bash
-# Create a feature branch
+# 创建功能分支
 git checkout -b feature/add-new-skill
 ```
 
-### 3. Add Your Skill
+### 3. 添加技能
+按照上述结构创建技能文件。
 
-Create the skill files following the structure above.
+### 4. 测试技能
+- 验证所有链接正常
+- 检查格式
+- 测试触发词
+- 检查示例
 
-### 4. Test Your Skill
-
-- Verify all links work
-- Check formatting
-- Test trigger words
-- Review examples
-
-### 5. Commit and Push
-
+### 5. 提交并推送
 ```bash
 git add .
-git commit -m "feat: Add [Skill Name] skill"
+git commit -m "feat: 添加[技能名]技能"
 git push origin feature/add-new-skill
 ```
 
-### 6. Create a Pull Request
+### 6. 创建 Pull Request
+- PR标题: `feat: 添加[技能名]技能`
+- PR描述:
+  - 技能的功能
+  - 研究方法
+  - 主要特性
+  - 测试情况
 
-- PR title: `feat: Add [Skill Name] skill`
-- PR description:
-  - What the skill does
-  - Research methodology
-  - Key features
-  - Testing performed
+## 📋 审查标准
 
-## 📋 Review Criteria
+技能将根据以下标准审查：
 
-Skills will be reviewed based on:
+### 研究准确性 (40%)
+- 多个已验证来源
+- 无事实错误
+- 正确引用
+- 信息最新
 
-### Research Accuracy (40%)
-- Multiple verified sources
-- No factual errors
-- Proper citations
-- Up-to-date information
+### 结构 (20%)
+- 正确的文件格式
+- 清晰的组织
+- 完整章节
+- 易于理解
 
-### Structure (20%)
-- Correct file format
-- Clear organization
-- Complete sections
-- Easy to understand
+### 真实性 (30%)
+- 符合个人声音
+- 准确的思维方式
+- 语境适当
+- 无刻板印象
 
-### Authenticity (30%)
-- True to individual's voice
-- Accurate thinking patterns
-- Context-appropriate
-- No stereotyping
+### 实用性 (10%)
+- 有用的示例
+- 清晰的触发词
+- 易于使用
+- 好的文档
 
-### Practicality (10%)
-- Useful examples
-- Clear triggers
-- Easy to use
-- Good documentation
+## 🎯 我们需要的技能
 
-## 🎯 Skills We Want
+### 优先领域
+1. **企业家**: 科技创始人、商业领袖
+2. **科学家**: 研究人员、创新者
+3. **艺术家**: 创作者、设计师
+4. **思想家**: 哲学家、作家
 
-### Priority Areas
-1. **Entrepreneurs**: Tech founders, business leaders
-2. **Scientists**: Researchers, innovators
-3. **Artists**: Creators, designers
-4. **Thinkers**: Philosophers, writers
+### 质量指标
+- 丰富的公开记录
+- 清晰的思维模式
+- 独特的见解
+- 教育价值
 
-### Quality Indicators
-- Substantial public record
-- Clear thinking patterns
-- Unique insights
-- Educational value
+## ❌ 避免事项
 
-## ❌ What to Avoid
+- 推测或未经证实的声明
+- 刻板印象或 caricatures
+- 受版权保护的材料
+- 研究质量差
+- 不完整的技能
 
-- Speculation or unverified claims
-- Stereotypes or caricatures
-- Copyrighted material
-- Poor research quality
-- Incomplete skills
+## 📞 获取帮助
 
-## 📞 Getting Help
+- GitHub Discussions: [提问](https://github.com/yunqi-hyper/he-xiaopeng.skill/discussions)
+- GitHub Issues: [报告问题](https://github.com/yunqi-hyper/he-xiaopeng.skill/issues)
+- 邮箱: [your-email@example.com]
 
-- GitHub Discussions: [Ask questions](https://github.com/yourusername/claude-skills-collection/discussions)
-- GitHub Issues: [Report problems](https://github.com/yourusername/claude-skills-collection/issues)
-- Email: [your-email@example.com]
+## 🏆 致谢
 
-## 🏆 Recognition
+贡献者将在以下地方获得认可：
+- 技能元数据
+- 贡献者列表
+- 发布说明
 
-Contributors will be acknowledged in:
-- Skill metadata
-- Contributors list
-- Release notes
-
-Thank you for helping build the best Claude skills collection!
+感谢您帮助构建最好的何小鹏思维技能！

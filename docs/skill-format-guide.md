@@ -1,160 +1,160 @@
-# Skill Format Guide
+# 技能格式指南
 
-This guide explains the standard format for Claude skills in the collection.
+本指南解释了何小鹏思维技能的标准格式。
 
-## 📁 File Structure
+## 📁 文件结构
 
-Each skill should have the following structure:
+每个技能应具有以下结构：
 
 ```
 skill-name/
-├── SKILL.md          # Main skill file (required)
-├── README.md         # User documentation (required)
-└── examples/         # Examples and use cases (optional)
+├── SKILL.md          # 主要技能文件（必需）
+├── README.md         # 用户文档（必需）
+└── examples/         # 示例和用例（可选）
     ├── sample-conversation.md
     └── another-example.md
 ```
 
-## 📋 SKILL.md Format
+## 📋 SKILL.md 格式
 
 ### Front Matter (YAML)
 
-All skills must start with YAML front matter:
+所有技能必须以 YAML front matter 开头：
 
 ```yaml
 ---
-name: skill-name                    # Unique identifier
+name: skill-name                    # 唯一标识符
 description: |
-  Brief, engaging description
+  简洁、吸引人的描述
 trigger_words: |
-  Word1, Word2, Word3              # Comma-separated
-version: 1.0.0                     # Semantic versioning
-author: Contributor Name           # Your name/alias
-last_updated: YYYY-MM-DD          # Last update date
+  触发词1, 触发词2, 触发词3        # 逗号分隔
+version: 1.0.0                     # 语义化版本
+author: 贡献者姓名                 # 你的名字/别名
+last_updated: YYYY-MM-DD          # 最后更新日期
 ---
 
-# Title
+# 标题
 ```
 
-### Required Sections
+### 必需章节
 
-#### 1. Core Quote
-Start with a representative quote:
+#### 1. 核心引用
+以代表性名言开始：
 ```markdown
-> "Famous quote that captures the essence"
+> "能捕捉精髓的名言"
 ```
 
-#### 2. Core Identity
-Brief overview of who this person is and their significance.
+#### 2. 核心身份
+简要介绍这个人和他的重要性。
 
-#### 3. Mental Models
-Key frameworks and ways of thinking:
-- 3-6 core models
-- Each with description, evidence, application, limitations
+#### 3. 心智模型
+关键框架和思维方式：
+- 3-6个核心模型
+- 每个包含描述、证据、应用、局限
 
-#### 4. Decision Heuristics
-Practical decision-making rules:
-- Table format recommended
-- Include scenario, rule, example
+#### 4. 决策启发式
+实用的决策规则：
+- 建议使用表格格式
+- 包含场景、规则、示例
 
-#### 5. Expression DNA
-How they communicate:
-- Sentence patterns
-- Vocabulary preferences
-- Rhythm and tone
+#### 5. 表达DNA
+他们的沟通方式：
+- 句式模式
+- 词汇偏好
+- 节奏和语调
 
-#### 6. Timeline
-Key milestones:
-- Table with time, event, significance
+#### 6. 时间线
+重要里程碑：
+- 带有时间、事件、意义的表格
 
-### Optional Sections
+### 可选章节
 
-- Values & Anti-patterns
-- Honest Boundaries
-- Intellectual Genealogy
-- Research Sources
+- 价值观与反模式
+- 诚实边界
+- 智识谱系
+- 研究来源
 
-## 📖 README.md Format
+## 📖 README.md 格式
 
-### Required Sections
+### 必需章节
 
-#### 1. Title and Tagline
+#### 1. 标题和标语
 ```markdown
-# Skill Name
+# 技能名称
 
-> Brief tagline
+> 简短标语
 ```
 
-#### 2. Overview
-- Skill ID and version
-- Last updated date
-- Focus areas
+#### 2. 概览
+- 技能ID和版本
+- 最后更新日期
+- 重点领域
 
-#### 3. Installation
+#### 3. 安装
 ```bash
 claude-skill install skill-name
 ```
 
-#### 4. Usage
-- Trigger words
-- Example applications
-- Sample conversation
+#### 4. 使用方法
+- 触发词
+- 示例应用
+- 示例对话
 
-#### 5. Research Sources
-- Primary sources
-- Secondary sources
+#### 5. 研究来源
+- 主要来源
+- 次要来源
 
-## 🎨 Writing Guidelines
+## 🎨 写作指南
 
-### Voice and Tone
+### 声音和语调
 
-- **First-person**: The skill speaks as the person
-- **Authentic**: Capture their actual voice
-- **Context-aware**: Adjust to conversation topics
-- **Respectful**: Avoid stereotypes and caricatures
+- **第一人称**: 技能以这个人身份说话
+- **真实**: 捕捉他们的真实声音
+- **语境感知**: 根据对话主题调整
+- **尊重**: 避免刻板印象和 caricatures
 
-### Content Guidelines
+### 内容指南
 
-#### What to Include
-- Verified facts from public sources
-- Actual quotes and sayings
-- Real decision-making frameworks
-- Authentic mental models
+#### 包含内容
+- 来自公开来源的已验证事实
+- 实际的名言和说法
+- 真实的决策框架
+- 真实的心智模型
 
-#### What to Avoid
-- Speculation or personal opinions
-- Unverified claims
-- Stereotypes
-- Copyrighted material
+#### 避免内容
+- 推测或个人观点
+- 未经证实的声明
+- 刻板印象
+- 受版权保护的材料
 
-### Research Requirements
+### 研究要求
 
-- Minimum 3 reliable sources
-- Primary sources preferred (speeches, writings)
-- Secondary sources for context
-- All sources properly cited
+- 最少3个可靠来源
+- 优先主要来源（演讲、著作）
+- 次要来源提供背景
+- 所有来源正确引用
 
-## 🔧 Technical Requirements
+## 🔧 技术要求
 
-### File Naming
-- Use lowercase with hyphens
-- No spaces or special characters
-- Keep it short and descriptive
+### 文件命名
+- 使用小写和连字符
+- 无空格或特殊字符
+- 保持简短和描述性
 
-### Versioning
-Use semantic versioning:
-- `1.0.0` - Initial release
-- `1.1.0` - Adding features
-- `1.0.1` - Bug fixes
-- `2.0.0` - Major changes
+### 版本控制
+使用语义化版本：
+- `1.0.0` - 初始发布
+- `1.1.0` - 添加功能
+- `1.0.1` - 错误修复
+- `2.0.0` - 重大更改
 
-### Trigger Words
-- 3-5 key phrases
-- Natural language
-- Easy to remember
-- Unique to the skill
+### 触发词
+- 3-5个关键短语
+- 自然语言
+- 易于记忆
+- 技能独有
 
-## 📝 Examples
+## 📝 示例
 
 ### SKILL.md Front Matter
 ```yaml
@@ -170,52 +170,52 @@ last_updated: 2024-04-17
 ---
 ```
 
-### Mental Model Format
+### 心智模型格式
 ```markdown
-### 1. Design Simplicity
-- **Description**: Less is more, focus on essential user experience
-- **Source Evidence**:
-  - "Design is not just what it looks like"
-  - Removal of unnecessary ports in MacBook
-- **Application**: Remove features that don't serve core user needs
-- **Limitations**: Can lead to reduced customization options
+### 1. 设计简洁性
+- **描述**: 少即是多，专注于核心用户体验
+- **来源证据**:
+  - "设计不只是外表的样子"
+  - MacBook上移除不必要的接口
+- **应用**: 移除不满足核心用户需求的功能
+- **局限**: 可能导致定制选项减少
 ```
 
-### Decision Heuristic
+### 决策启发式
 ```markdown
-| Heuristic | Application |
-|-----------|-------------|
-| "Three clicks" rule | Any task should take ≤ 3 clicks |
-| "Thinnest possible" | Make devices as thin as technology allows |
+| 启发式 | 应用场景 |
+|--------|----------|
+| "三点击"规则 | 任何任务应该在 ≤ 3 次点击内完成 |
+| "尽可能薄" | 尽技术允许将设备做得尽可能薄 |
 ```
 
-## 🧪 Testing Checklist
+## 🧪 测试清单
 
-Before submitting:
+提交前：
 
-- [ ] Front matter is complete and correct
-- [ ] All links work
-- [ ] No spelling or grammar errors
-- [ ] Voice is authentic
-- [ ] Examples are practical
-- [ ] Research is properly cited
-- [ ] Format follows this guide
-- [ ] README matches skill
-- [ ] Trigger words work
-- [ ] Version is up-to-date
+- [ ] Front matter 完整正确
+- [ ] 所有链接正常
+- [ ] 无拼写或语法错误
+- [ ] 声音真实
+- [ ] 示例实用
+- [ ] 研究正确引用
+- [ ] 格式遵循本指南
+- [ ] README 与技能匹配
+- [ ] 触发词有效
+- [ ] 版本最新
 
-## 📚 Reference Resources
+## 📚 参考资源
 
-- [Anthropic's Skill Documentation](https://docs.anthropic.com/claude/docs/skills)
-- [Markdown Guide](https://www.markdownguide.org/)
-- [Semantic Versioning](https://semver.org/)
+- [Anthropic 的技能文档](https://docs.anthropic.com/claude/docs/skills)
+- [Markdown 指南](https://www.markdownguide.org/)
+- [语义化版本](https://semver.org/)
 
-## ❌ Common Mistakes
+## ❌ 常见错误
 
-1. **Research gaps** - Not enough sources or verification
-2. **Voice inconsistency** - Not staying in character
-3. **Poor structure** - Missing sections or bad organization
-4. **Weak examples** - Abstract or unrealistic scenarios
-5. **Technical errors** - Bad formatting or broken links
+1. **研究不足** - 来源不够或未验证
+2. **声音不一致** - 未保持角色
+3. **结构差** - 缺少章节或组织混乱
+4. **示例弱** - 抽象或不现实的场景
+5. **技术错误** - 格式错误或链接失效
 
-Follow this guide to create high-quality, useful Claude skills!
+遵循本指南创建高质量的何小鹏思维技能！

@@ -1,130 +1,129 @@
-# Contributing to Claude Skills Collection
+# 贡献指南
 
-Thanks for your interest in contributing! This project thrives on community contributions.
+感谢您对何小鹏思维技能的兴趣！本项目欢迎社区贡献。
 
-## 🚀 Quick Start
+## 🚀 快速开始
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-skill`)
-3. Commit your changes (`git commit -m 'feat: Add amazing skill'`)
-4. Push to the branch (`git push origin feature/amazing-skill`)
-5. Open a Pull Request
+1. Fork 仓库
+2. 创建功能分支 (`git checkout -b feature/amazing-skill`)
+3. 提交更改 (`git commit -m 'feat: 添加惊人技能'`)
+4. 推送到分支 (`git push origin feature/amazing-skill`)
+5. 创建 Pull Request
 
-## 📋 Pull Request Process
+## 📋 Pull Request 流程
 
-### PR Checklist
+### PR 检查清单
 
-Before submitting your PR:
+提交 PR 前：
 
-- [ ] Read the [contribution guide](../docs/contributing.md)
-- [ ] Skill follows the [format guide](../docs/skill-format-guide.md)
-- [ ] All tests pass (if applicable)
-- [ ] Documentation is complete
-- [ ] Update README if adding a new skill
-- [ ] PR follows our format below
+- [ ] 阅读 [贡献指南](../docs/contributing.md)
+- [ ] 技能遵循 [格式指南](../docs/skill-format-guide.md)
+- [ ] 所有测试通过（如适用）
+- [ ] 文档完整
+- [ ] PR 遵循以下格式
 
-### PR Format
+### PR 格式
 
 ```markdown
-## Type: feat | fix | docs | style | refactor | test
+## 类型: feat | fix | docs | style | refactor | test
 
-### Summary
-Brief description of changes
+### 概述
+简要描述更改
 
-### Changes Made
-- Added new skill for [Person]
-- Updated research sources
-- Fixed formatting issues
+### 所做更改
+- 添加了 [人物] 的新技能
+- 更新了研究来源
+- 修复了格式问题
 
-### Testing
-- Verified trigger words work
-- Tested examples
-- Checked links
+### 测试
+- 验证了触发词有效
+- 测试了示例
+- 检查了链接
 
-### Related Issues
-Closes #[issue number]
+### 相关问题
+关闭 #[issue 编号]
 ```
 
-## 🤝 Code of Conduct
+## 🤝 行为准则
 
-This project follows a Code of Conduct. Please:
+本项目遵循行为准则。请：
 
-- Be respectful and inclusive
-- Focus on what is best for the community
-- Show empathy towards other community members
+- 相互尊重和包容
+- 专注于对社区最好的事
+- 对其他社区成员表示同理心
 
-## 📞 Getting Help
+## 📞 获取帮助
 
-- **GitHub Discussions**: [General questions](https://github.com/yourusername/claude-skills-collection/discussions)
-- **GitHub Issues**: [Bugs and features](https://github.com/yourusername/claude-skills-collection/issues)
-- **Email**: [maintainers@example.com](mailto:maintainers@example.com)
+- **GitHub Discussions**: [一般问题](https://github.com/yunqi-hyper/he-xiaopeng.skill/discussions)
+- **GitHub Issues**: [错误和功能](https://github.com/yunqi-hyper/he-xiaopeng.skill/issues)
+- **邮箱**: [maintainers@example.com](mailto:maintainers@example.com)
 
-## 🎯 Development Workflow
+## 🎯 开发工作流
 
-### Local Setup
+### 本地设置
 
 ```bash
-# Clone your fork
-git clone https://github.com/YOUR_USERNAME/claude-skills-collection.git
-cd claude-skills-collection
+# Clone 你的 fork
+git clone https://github.com/YOUR_USERNAME/he-xiaopeng.skill.git
+cd he-xiaopeng.skill
 
-# Install dependencies (if any)
-npm install  # or pip install, etc.
+# 安装依赖（如果有）
+npm install  # 或 pip install 等
 
-# Create new skill
+# 创建新技能
 mkdir -p skills/new-skill
 ```
 
-### Testing Skills
+### 测试技能
 
 ```bash
-# Test skill installation
+# 测试技能安装
 ./test-skills.sh install
 
-# Test skill triggers
+# 测试技能触发
 ./test-skills.sh triggers
 
-# Run all tests
+# 运行所有测试
 ./test-skills.sh all
 ```
 
-## 📝 Pull Request Template
+## 📝 Pull Request 模板
 
 ```markdown
-## PR Title Format
-- feat: add [skill-name] skill
-- fix: correct [issue] in [skill]
-- docs: update documentation
-- style: formatting changes
+## PR 标题格式
+- feat: 添加 [技能名] 技能
+- fix: 修复 [技能] 中的 [问题]
+- docs: 更新文档
+- style: 格式更改
 
-## Description
-What does this PR do? Why is it needed?
+## 描述
+这个 PR 做了什么？为什么需要？
 
-## Changes
-- [ ] Added new skill
-- [ ] Updated existing skill
-- [ ] Fixed documentation
-- [ ] Other changes
+## 更改
+- [ ] 添加了新技能
+- [ ] 更新了现有技能
+- [ ] 修复了文档
+- [ ] 其他更改
 
-## Testing
-Describe how you tested these changes
+## 测试
+描述你如何测试这些更改
 
-## Checklist
-- [ ] I have read the [contribution guide](../docs/contributing.md)
-- [ ] My changes follow the [skill format guide](../docs/skill-format-guide.md)
-- [ ] I have updated the README if needed
-- [ ] I have added tests for my changes
-- [ ] My PR is ready for review
+## 检查清单
+- [ ] 我已阅读 [贡献指南](../docs/contributing.md)
+- [ ] 我的更改遵循 [技能格式指南](../docs/skill-format-guide.md)
+- [ ] 我已在需要时更新 README
+- [ ] 我已为我的更改添加测试
+- [ ] 我的 PR 已准备好审查
 
-## Additional Context
-Any other context or screenshots
+## 其他上下文
+任何其他上下文或截图
 ```
 
-## 🏆 Recognition
+## 🏆 认可
 
-Contributors will be recognized in:
-- The skill metadata
-- Contributors list
-- Release notes
+贡献者将在以下地方获得认可：
+- 技能元数据
+- 贡献者列表
+- 发布说明
 
-Thank you for helping build the best Claude skills collection!
+感谢您帮助构建最好的何小鹏思维技能！
